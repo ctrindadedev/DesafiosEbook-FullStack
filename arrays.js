@@ -42,6 +42,5 @@ console.log(tarefas)
 
 //6. Transforme um array de palavras em uma frase completa usando `join`.
 let frase = ["Caio", "de", "Medeiros", "Trindade"]
-frase = frase.join()
+frase = frase.join(" ")
 console.log(frase)
-frase.sli

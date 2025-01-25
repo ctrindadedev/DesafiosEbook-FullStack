@@ -40,7 +40,7 @@ console.log(pilha.peek());  // Saída: 1
 
 //Desafios
 
-//Implemente uma pilha que gerencie o atendimento de clientes em um restaurante.
+//Implemente uma pilha que gerencie o atendimento de clientes em um restaurante maluco.
 class FilaCliente{
     constructor(){
         this.clientes = []
@@ -122,14 +122,25 @@ class Reverse{
     constructor(){
         this.palavra = []
     }
-push(string){
+reverterString(string){
+    let inicial = string
     if (this.isEmpty === true){
         console.log("A string é inválida")
     }
     else
-    for(let i=0; i<(string.length);i++)
-        this.palavra.push(string[string.length-1])
-        string = string.slice()
+    for(let i=0; i<(string.length);i++){
+        this.palavra.push(string[string.length-1-i])
+}
+    return this.palavra = this.palavra.join("")
+}
+verificadorPalindromo(string, string_contraria){
+    string_contraria = this.palavra
+    if (string_contraria === string){
+        console.log(`A palavra ${string} é um palindromo`)
+    }
+    else{
+        console.log(`A palavra ${string} não é um palindromo`)
+    }
 
 }
 isEmpty(){
@@ -137,8 +148,10 @@ isEmpty(){
 }
 }
 let teste = new Reverse
-teste.push("Palindromo")
+inicial = "nini"
+teste.reverterString(inicial)
 console.log(teste.palavra)
+teste.verificadorPalindromo(inicial)
 
 
 //Escreva uma função que converta números decimais para binários usando pilhas.

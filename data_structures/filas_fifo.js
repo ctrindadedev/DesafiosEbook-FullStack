@@ -1,57 +1,52 @@
-class Fila {
-  constructor() {
-    this.itens = [];
-  }
+//Estrutura Básica:
+  //enqueue Adiciona um elemento ao final da fila
+  //dequeue Remove o elemento da frente da fila
+  //front Retorna o elemento na frente da fila
+  //isEmpty Verifica se a fila está vazia
 
-  enqueue(elemento) {
-    this.itens.push(elemento); // Adiciona ao final
+//Dicas Importantes
+//Filas são Ideais para Processos Sequenciais:
+   // Use filas para situações em que as tarefas precisam ser concluídas na ordem em que foram recebidas.
+    
+//Evite Operações Ineficientes:
+  // Usar `shift` em arrays pode ser lento para filas muito grandes. Considere usar bibliotecas especializadas para filas maiores.
+    
+//Filas em Sistemas Reais:
+  // Muitas filas em sistemas reais são implementadas usando estruturas mais complexas, como filas circulares.
+  //Desafios
+    // 1. Implemente uma fila que gerencie o atendimento de clientes em um restaurante.
+    class FilaMercado{
+      constructor(){
+        this.ordem = [];
+      }
+queue(){
+  console.log(this.ordem)
+}
+enqueue(cliente){
+  this.ordem.push(cliente)
+  console.log(`O cliente ${cliente} entrou na fila` )
+}
+dequeue(){
+  if (this.isEmpty === true){
+    console.log("Não há mais clientes na fila.")
   }
-
-  dequeue() {
-    if (this.isEmpty()) {
-      return "A fila está vazia!";
-    }
-    return this.itens.shift(); // Remove do início
-  }
-
-  front() {
-    return this.isEmpty() ? "A fila está vazia!" : this.itens[0];
-  }
-
-  isEmpty() {
-    return this.itens.length === 0;
+  else{
+  console.log(`Bem-vindo ao LeParaiba! O que você deseja? Senhor(a) ${this.ordem[0]}`)
+  console.log(`${this.ordem[0]} foi atendido!`)
+  this.ordem.shift()
   }
 }
-
-const fila = new Fila();
-fila.enqueue("Cliente 1");
-fila.enqueue("Cliente 2");
-console.log(fila.front());  // Saída: Cliente 1
-fila.dequeue();
-console.log(fila.front());  // Saída: Cliente 2
-
-class Atendimento {
-  constructor() {
-    this.clientes = [];
-  }
-
-  adicionarCliente(cliente) {
-    this.clientes.push(cliente);
-    console.log(`Cliente ${cliente} entrou na fila.`);
-  }
-
-  atenderCliente() {
-    if (this.clientes.length === 0) {
-      console.log("Nenhum cliente na fila.");
-      return;
-    }
-    const clienteAtendido = this.clientes.shift();
-    console.log(`Atendendo cliente ${clienteAtendido}.`);
-  }
+isEmpty(){
+  this.ordem.length() === 0
 }
+  }
+let restaurante = new FilaMercado()
+restaurante.enqueue("Caio")
+restaurante.enqueue("Gutzz")
+restaurante.dequeue()
+restaurante.dequeue()
+    // 2. Crie uma fila que armazene músicas em uma playlist e remova a música quando for tocada.
 
-const atendimento = new Atendimento();
-atendimento.adicionarCliente("João");
-atendimento.adicionarCliente("Ana");
-atendimento.atenderCliente(); // Saída: Atendendo cliente João.
-atendimento.atenderCliente(); // Saída: Atendendo cliente Ana.
+    // 4. Use uma fila para implementar um sistema de envio de mensagens em lote.
+
+    // 5. Crie uma fila que armazene processos pendentes e os execute na ordem de chegada.
