@@ -1,4 +1,4 @@
-Este repositório contém a resolução de desafios e a teoria do Ebook "Fullstack do zero aos primeiros projetos", desenvolvido pelo @umporcentoprog. O ebook aborda diversas tecnologias, entre elas:
+Este repositório contém a resolução de desafios propostos do Ebook "Fullstack do zero aos primeiros projetos", desenvolvido pelo @umporcentoprog. O ebook aborda diversas tecnologias, entre elas:
 
 HTML, CSS, JAVASCRIPT
 
