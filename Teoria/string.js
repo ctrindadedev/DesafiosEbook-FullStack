@@ -7,7 +7,7 @@ let nome_completo = "Caio de Medeiros Trindade";
 first_name = nome_completo.split(" ");
 console.log(first_name[0])
 //Verifique se uma string contém a palavra "Java" e exiba uma mensagem personalizada.
-let js = "                      Java Script                                     "
+let js = "                      Competências Relevantes                                     "
 if (js.includes("Java"))
     console.log("Javinhaaa")
 
