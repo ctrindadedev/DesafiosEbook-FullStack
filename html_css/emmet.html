@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+//Usando o emet podemos usar:
+header>nav>ul>li*3.red{tafacil}
+Para gerar:
+<header>
+    <nav>
+        <ul>
+            <li class="red">tafacil</li>
+            <li class="red">tafacil</li>
+            <li class="red">tafacil</li>
+        </ul>
+    </nav>
+</header>
+ou p>h1>h2[type=numero]
+para gerar:
+<p>
+    <h1>
+        <h2 type="numero"></h2>
+    </h1>
+</p>
+    </body>
+Facilidade para criar tags com filhos  ">":
+(header>h2{Heading}+nav>ol>li*5>a{link $})+main+footer
+<header>
+    <h2>Heading</h2>
+    <nav>
+        <ol>
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+            <li><a href="">link 4</a></li>
+            <li><a href="">link 5</a></li>
+        </ol>
+    </nav>
+</header>
+<main></main>
+<footer></footer>
+Até mesmo css 
+<style>
+    .class{
+        color: violet;
+        background-color: brown;
+        width: 10%;
+        height: 10;
+    }
+ </style>
+
+p.text
