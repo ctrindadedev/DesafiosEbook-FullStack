@@ -1,4 +1,4 @@
-//Registro dos scrips simples  usados para o seguinte desafio de CRUD básico
+//Registro dos scrips simples  usados para o seguinte desafio de CRUD básico pré ORM
 
 //Create (Adicione 3 Usuários na Tabela)
 //insert into usuarios(email, idade)

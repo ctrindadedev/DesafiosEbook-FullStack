@@ -1,4 +1,4 @@
-//Exercicios Relacionados a desenvolver scripts sql e entender banco de dados relacionais
+//Exercicios Relacionados a desenvolver scripts sql pré ORM e entender banco de dados relacionais
 
 // create database empresa
 
