@@ -7,9 +7,7 @@ async function sincronizarBanco() {
     console.log("Banco sincronizado com sucesso!");
   } catch (error) {
     console.error("Erro ao sincronizar o banco:", error);
-  } finally {
-    sequelize.close();
   }
 }
 
-sincronizarBanco();
+module.exports = { sincronizarBanco };
