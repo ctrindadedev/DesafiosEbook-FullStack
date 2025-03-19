@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="1dot4.css"
+  </head>
+
+  <body>
+    <p></p>
+    <p></p>
+    <div>
+      <h1>Módulo 1.4 do Ebook FullStack</h1>
+      <h4>A atividade solicita:</h4>
+      <ul class="lista">
+        <li>
+          Crie um novo arquivo HTML com a estrutura básica aprendida e adicione
+          um cabeçalho, parágrafo e lista
+        </li>
+        <li>
+          Estilize sua página usando um arquivo CSS separado, alterando as cores
+          e fontes.
+        </li>
+        <li>
+          Adicione uma nova seção "Projetos" com uma lista de projetos fictícios
+          que você gostaria de desenvolver.
+        </li>
+        <li>
+          Insira uma imagem de perfil na seção "Sobre Mim" e estilize-a com CSS.
+        </li>
+        <li>
+          Crie um formulário de contato na seção "Contato" com campos para nome,
+          e-mail e mensagem, e estilize-o com CSS.
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Projetos</h3>
+      <ol>
+        <li>Réplica do Spotify</li>
+        <li>Site Psalmssss</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <h3>Sobre Mim</h3>
+    <div>Me chamo Caio de Medeiros, espero que ocorra tudo bem em 2025!</div>
+    <div>E esse sou eu: <img src="eu_foto_branca.jpg" />></div>
+  </body>
+</html>

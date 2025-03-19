@@ -1,0 +1,62 @@
+/* seletor{
+    propriedade: valor
+} */
+/* 
+seletor de tipo: pelo nome da tag html */
+body {
+  background-color: blanchedalmond;
+}
+/* seletor de classe Selecionam elementos que possuem um atributo de  classe específico. */
+.minha-classe {
+  font-size: 18px;
+}
+/* Seletores de ID: Selecionam elementos que possuem um atributo de ID específico. */
+#meu-id {
+  margin: 20px;
+}
+/* Seletores de Atributo: Selecionam elementos que possuem um atributo específico. */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.item {
+  background-color: #ff0000;
+  padding: 20px;
+  margin: 10px;
+}
+.format {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.font1 {
+  font-family: Verdana;
+}
+
+.font2 {
+  font-size: smaller;
+  font-style: oblique;
+  font-family: "Times New Roman";
+}
+
+.font3 {
+  font-size: xx-small;
+  font-family: Helvetica;
+}
+
+.first_box {
+  width: max-content; /* Largura */
+  height: fit-content; /* Altura */
+  font-weight: 100;
+  /* Espaçamento Interno */
+  padding: 10px;
+  /* Borda */
+  border: 5px, rebeccapurple;
+  /* Margem externa */
+  margin: 20px;
+}
