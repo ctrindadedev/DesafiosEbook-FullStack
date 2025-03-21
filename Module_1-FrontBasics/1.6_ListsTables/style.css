@@ -1,0 +1,31 @@
+ul {
+  list-style-type: square; /* Define o tipo de marcador */
+  padding-left: 20px; /* Adiciona espaço à esquerda da lista
+*/
+}
+ol {
+  list-style-type: georgian; /* Define o tipo de marcador para
+lista ordenada */
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+}
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove espaços entre as célul
+as */
+}
+th,
+td {
+  border: 1px solid #ddd; /* Adiciona bordas às células */
+  padding: 8px; /* Adiciona espaçamento interno */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+th {
+  background-color: #f2f2f2; /* Adiciona cor de fundo aos cab
+eçalhos */
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Adiciona cor de fundo às linhas pares */
+}

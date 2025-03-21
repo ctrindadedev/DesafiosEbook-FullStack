@@ -7,10 +7,17 @@ h4 {
   align-items: center;
 }
 .container {
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* Largura */
+  align-items: first baseline;
+  flex-direction: column;
+  /* Altura */
   height: 100px;
   background-color: azure;
+}
+img {
+  height: auto;
+  /* largura */
+  width: 100px;
 }

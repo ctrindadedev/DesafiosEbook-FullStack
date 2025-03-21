@@ -1,0 +1,10 @@
+img {
+  /* largura */
+  width: 500px;
+  /* altura */
+  height: auto;
+}
+.paragrafo {
+  display: flex;
+  row-gap: auto;
+}
