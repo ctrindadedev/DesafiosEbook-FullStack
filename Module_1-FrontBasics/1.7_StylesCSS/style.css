@@ -1,0 +1,24 @@
+div {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px;
+  margin: 10px;
+  border-color: black;
+}
+.background {
+  background-color: blue;
+  background-image: url(Walp.jpg);
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.none {
+  display: none;
+}
