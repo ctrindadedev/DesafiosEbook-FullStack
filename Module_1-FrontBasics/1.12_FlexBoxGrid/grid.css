@@ -1,0 +1,21 @@
+/* Grid é  um layout bidimensional, ideal para estruturas de grade, como blogs ou catalogos. */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Três colunas de tamanho igual  */
+  grid-template-rows: 100px 50px; /* Primeira linha de 100px
+e segunda de 50px */
+  grid-gap: 10px; /* Espaçamento entre os itens */
+}
+.grid-item:nth-child(1) {
+  grid-column: 1 / 4; /* O primeiro item ocupa três colunas
+*/
+}
+.grid-item:nth-child(2) {
+  grid-row: 1/3; /* O segundo item ocupa duas linhas (ocupa da coluna 1 à coluna 3) */
+}
+.grid-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}

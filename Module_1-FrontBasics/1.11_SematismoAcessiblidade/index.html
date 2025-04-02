@@ -1,0 +1,62 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <title>Página Acessível</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bem-vindo ao Meu Site Acessível</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#to-do">To-Do</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Meu nome é Caio e sou um desenvolvedor web dedicado a criar
+          experiências inclusivas na web.
+        </p>
+      </section>
+      <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Desenvolvimento de Websites</li>
+          <li>Design Responsivo</li>
+          <li>Otimização de Performance</li>
+        </ul>
+      </section>
+      <section id="to-do">
+        Adicione atributos alt descritivos a todas as imagens do seu site para
+        melhorar a acessibilidade. 🖼️2. Use elementos semânticos como " header ,
+        nav , section , article e footer em uma página HTML. 📄 5. Implemente
+        atributos ARIA em elementos interativos para melhorar a acessibilidade.
+        🌐 https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <form action="/submit" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 CC. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
