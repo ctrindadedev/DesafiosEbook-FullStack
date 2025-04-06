@@ -1,0 +1,16 @@
+.texto {
+  color: red;
+}
+.bigger {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.galeria {
+  padding: 50px;
+  font-style: italic;
+  margin: auto;
+}
+.corzinha {
+  background-color: black;
+  color: white;
+}
