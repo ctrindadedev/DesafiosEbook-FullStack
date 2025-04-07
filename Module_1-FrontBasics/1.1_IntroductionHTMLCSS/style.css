@@ -1,8 +1,14 @@
 /* seletor{
-    propriedade: valor
-} */
-/* 
-seletor de tipo: pelo nome da tag html */
+    propriedade: valor } */
+
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* seletor de tipo: pelo nome da tag html */
 body {
   background-color: blanchedalmond;
 }
@@ -29,6 +35,7 @@ input[type="text"] {
   padding: 20px;
   margin: 10px;
 }
+
 .format {
   background-color: blue;
   color: whitesmoke;
@@ -54,9 +61,29 @@ input[type="text"] {
   height: fit-content; /* Altura */
   font-weight: 100;
   /* Espaçamento Interno */
-  padding: 10px;
+  padding: 20px;
   /* Borda */
   border: 5px, rebeccapurple;
   /* Margem externa */
   margin: 20px;
+  background-color: grey;
 }
+/* Box-Models é o conceito fundamental do css, tudo é uma caixa, e o que compõe uma caixa é sua margin, seu padding, sua borda e seu content*/
+
+/* Content: O conteúdo real da caixa, como texto ou imagem.
+Padding: Espaço entre o conteúdo e a borda.
+Border: Borda ao redor do padding (se definida).
+Margin: Espaço entre a borda e os elementos vizinhos. */
+
+/* Algumas propriedades de uso frequente */
+/* Margem e Padding
+margin : Define a margem externa do elemento. padding : Define o espaçamento interno do elemento. */
+div {
+  width: 300px; /* largura */
+  padding: 10px;
+  border: 5px solid #ccc;
+  margin: 20px;
+}
+
+/* Flexbox: Sistema de layout unidimensional que facilita a criação de layouts flexíveis. */
+/* Grid Layout: Sistema de layout bidimensional que facilita a criação de layouts complexos. */
