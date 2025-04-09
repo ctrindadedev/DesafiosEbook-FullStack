@@ -19,7 +19,7 @@ console.log(todosParagrafos); // NodeList [ <p.texto>, <p.texto> ]
 let divs = document.querySelectorAll("div");
 divs.forEach((div) => {
   div.classList.add("bigger");
-  //altere seu conteúdo.
+  //altere seu conteúdo
   div.innerHTML = "Hoje é um dia chuvoso, e eu estou com fome.";
 });
 

@@ -18,69 +18,66 @@
       <p></p>
       button: Botão para enviar o formulário.
       <form action="/submit" method="post">
-        <form>
-          <label for="username">Nome de Usuário:</label>
-          <input type="text" id="username" name="username" required />
-          <label for="senha">Senha:</label>
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            required
-            pattern=".
-{6,}"
-            title="A senha deve ter pelo menos 6 caracteres"
-          />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="idade">Idade:</label>
-          <input
-            type="number"
-            id="idade"
-            name="idade"
-            min="1"
-            max="100"
-            required
-          />
-          <label for="data">Data de Nascimento:</label>
-          <input type="date" id="data" name="data" required />
-          <label for="newsletter">Inscrever-se na Newsletter:</label>
-          <input type="checkbox" id="newsletter" name="newsletter" required />
-          <p>Sexo:</p>
-          <input
-            type="radio"
-            id="masculino"
-            name="sexo"
-            value="masculino"
-            required
-          />
-          <label for="masculino">Masculino</label>
-          <input
-            type="radio"
-            id="feminino"
-            name="sexo"
-            value="feminino"
-            required
-          />
-          <label for="feminino">Feminino</label>
-          <input type="radio" id="outro" name="sexo" type="Outro" required />
-          <label for="outro">Outro</label>
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          required
+          pattern=".{6,}"
+          title="A senha deve ter pelo menos 6 caracteres"
+        />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="idade">Idade:</label>
+        <input
+          type="number"
+          id="idade"
+          name="idade"
+          min="1"
+          max="100"
+          required
+        />
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" required />
+        <label for="newsletter">Inscrever-se na Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" required />
+        <p>Sexo:</p>
+        <input
+          type="radio"
+          id="masculino"
+          name="sexo"
+          value="masculino"
+          required
+        />
+        <label for="masculino">Masculino</label>
+        <input
+          type="radio"
+          id="feminino"
+          name="sexo"
+          value="feminino"
+          required
+        />
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outro" name="sexo" type="Outro" required />
+        <label for="outro">Outro</label>
 
-          <label for="pais">País:</label>
-          <select id="pais" name="pais">
-            <option value="brasil">Brasil</option>
-            <option value="eua">Estados Unidos</option>
-            <option value="japao">Japão</option>
-          </select>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="4"
-            cols="60"
-            required
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+          <option value="brasil">Brasil</option>
+          <option value="eua">Estados Unidos</option>
+          <option value="japao">Japão</option>
+        </select>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          cols="60"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </body>

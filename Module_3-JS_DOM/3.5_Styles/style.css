@@ -1,0 +1,9 @@
+.destacado {
+  color: red;
+  font-weight: bold;
+}
+#paragrafo {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+}

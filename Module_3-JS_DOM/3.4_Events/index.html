@@ -7,12 +7,42 @@
     <title>Eventos Comuns</title>
   </head>
   <body>
+    <p>Pa</p>
+    <p>ra</p>
+    <p>gra</p>
+    <p>fo</p>
     <button id="botaoClique">Clique em mim!</button>
     <p id="texto">Passe o mouse aqui!</p>
     <input id="campoTexto" type="text" placeholder="Olha o console!" />
+    <div id="contador">Preparando para contar!</div>
     <button id="botaoRemover">Remover Listener</button>
-    <button id="botaoAdicionar">Adicionar Listener</button>;
+    <button id="botaoAdicionar">Adicionar Listener</button>
     <button id="meuBotao">Não clique em mim!</button>
+    <button id="meuBotao2">Não clique em mim! Sério!</button>
+
+    <div class="container">
+      <img id="img" src="assets/imagem1.jpg" alt="imagem de 2 irmãos" />
+      <p>Passe o mouse na imagem acima 👆</p>
+    </div>
+    <form action="submit" method="post">
+      <label for="username">Nome Completo:</label>
+      <input type="text" name="username" id="username" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="senha">Senha:</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        required
+        pattern=".{6,}"
+        title="A senha deve ter pelo menos 6 caracteres"
+      />
+
+      <button id="envio" type="submit">Enviar</button>
+    </form>
   </body>
   <script src="script.js"></script>
 </html>

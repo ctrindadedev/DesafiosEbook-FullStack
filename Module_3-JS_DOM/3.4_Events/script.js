@@ -1,6 +1,11 @@
-let botao = document.getElementById("botaoClique");
-let texto = document.getElementById("texto");
-let campoTexto = document.getElementById("campoTexto");
+const botao = document.getElementById("botaoClique");
+const texto = document.getElementById("texto");
+const campoTexto = document.getElementById("campoTexto");
+const img = document.getElementById("img");
+const botaoAdicionar = document.getElementById("botaoAdicionar");
+const botaoRemover = document.getElementById("botaoRemover");
+const meuBotao = document.getElementById("meuBotao");
+const paragraphButton = document.getElementById("meuBotao2");
 // Evento de clique
 botao.addEventListener("click", function () {
   alert("Botão clicado!");
@@ -22,11 +27,8 @@ campoTexto.addEventListener("keyup", function (event) {
   console.log("Tecla liberada: " + event.key);
 });
 
-let botaoAdicionar = document.getElementById("botaoAdicionar");
-let botaoRemover = document.getElementById("botaoRemover");
-let meuBotao = document.getElementById("meuBotao");
 function mostrarAlerta() {
-  alert("Botão clicado!");
+  alert("Formulário Enviado!");
 }
 
 // Adiciona o listener
@@ -38,13 +40,43 @@ botaoRemover.addEventListener("click", function () {
   meuBotao.removeEventListener("click", mostrarAlerta);
 });
 
-// Crie um arquivo chamado eventos_interatividade.html e adicione um Event
-// Listener a um botão que altera o texto de um parágrafo ao ser clicado. 📄
-// 2. Adicione Event Listeners para mouseover e mouseout em uma imagem,
-// alterando seu estilo ao passar o mouse sobre ela e ao sair. 🖼️3. Crie um campo de texto que exiba a contagem de caracteres digitados em
-// tempo real usando os eventos keydown e keyup . 🔢
-// 4. Implemente um botão que adiciona e remove uma classe de um parágrafo,
-// alternando seu estilo ao ser clicado. 🔄
-// 5. Combine vários eventos para criar uma interatividade mais complexa, como
-// um formulário que exibe uma mensagem de sucesso ao ser enviado, com
-// validação dos campos. 🖋
+//Adicione um Event Listener a um botão que altera o texto de um parágrafo ao ser clicado.
+const allParagraphs = Array.from(document.getElementsByTagName("p")); //HTMLCollection sendo transformada num Array.
+console.log(allParagraphs);
+const paragraphChanger = () => {
+  allParagraphs.forEach((p) => {
+    p.textContent = "Novo parágrafo.";
+  });
+};
+paragraphButton.addEventListener("click", () => paragraphChanger());
+// 2. Adicione Event Listeners para mouseover e mouseout em uma imagem,  alterando seu estilo ao passar o mouse sobre ela e ao sair.
+// usar toggle incorretamente para mouseover/mouseout, faz com que a classe seja adicionada e removida a cada movimento mínimo do mouse — e isso gera “flickering” (efeito piscante).
+// Maneira correta de usar o toggle para esses casos depende da transição no css! E de operadores booleanos para o toogle apresentar o comportamento esperado.
+const imageChanger = (element, destaque) => {
+  element.classList.toggle("estilo-destacado", destaque);
+};
+
+img.addEventListener("mouseover", () => imageChanger(img, true));
+img.addEventListener("mouseout", () => imageChanger(img, false));
+
+// Crie um campo de texto que exiba a contagem de caracteres digitados em tempo real
+const contador = document.getElementById("contador");
+const caracterCounter = (element) => {
+  element.addEventListener(
+    "input",
+    // .value acessa valores de tags html como <input> ou <textarea> (retorna o que foi digitado pelo usuário)
+    () => (contador.textContent = `Caracteres: ${element.value.length}`)
+  );
+};
+caracterCounter(campoTexto);
+
+// Combine vários eventos para criar uma interatividade mais complexa, como  um formulário que exibe uma mensagem de sucesso ao ser enviado, com validação dos campos .
+const formulario = document.querySelector("form");
+//A função que é passada como parametro do eventlistener, é uma função callback estando "prontidão"
+// Já o parametro event é o objeto que será gerado pelo navegado apóscaptar o event.type definido previamente, essa é a lógica por trás de acessar funções relacionadas ao parametro event
+formulario.addEventListener("submit", (event) => {
+  //PreventDefault evita o direcionamento automático após o envio do formulário (/submit)
+  event.preventDefault();
+  mostrarAlerta();
+  console.log("Enviado com Sucesso!");
+});
