@@ -20,5 +20,4 @@
 ### About the Repository
 > 🚧 **Work in Progress**  
 > Repository focused on the study of FullStack techs. In here i will upload some courses challengs and my own codes   
-> Main Sourch for the repository challengs: [Ebook FullStack](https://ebook.umporcentoprogramador.com.br/)
 
