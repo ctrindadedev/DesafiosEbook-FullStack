@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <!DOCTYPE html>
-
+  <link rel="stylesheet" href="style.css">
   <head>
     <title>Acessando Elementos Pai</title>
   </head>
   <body>
-    <div id="pai">
+    <div id="pai" class="clean">
       <p>Filho 1</p>
       <p>Filho 2</p>
       <p>Filho 3</p>
-      <p id="paragrafo">Este é um parágrafo.</p>
+      </div>
+    </div>
+    <div id = "container-paragrafos">
+      <p id="paragrafo">Irmão?</p>
       <p id="primeiro">Primeiro "irmão"</p>
       <p id="segundo">Segundo "irmão"</p>
       <p id="terceiro">Terceiro "irmão"</p>
-      <div id="container">
-        <p>Parágrafo existente</p>
-      </div>
+      <p>Parágrafo existente</p>
+    </div>
       <button id="adicionar">Adicionar Parágrafo</button>
       <button id="remover">Remover Parágrafo</button>
+      <button id="estilizar-pai">Estilizar Fámilia!</button>
+      <button id="estilizar-irmaos">Estilizar irmaõs!</button>
     </div>
     <script src="script.js"></script>
   </body>
