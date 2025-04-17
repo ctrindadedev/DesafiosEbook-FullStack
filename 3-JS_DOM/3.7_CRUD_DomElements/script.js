@@ -1,6 +1,7 @@
 const container = document.getElementById("container");
 const paragrafoOriginal = document.getElementById("paragrafoOriginal");
 const segundo = document.getElementById("segundo");
+// HTMLCollection, é uma coleçaõ "viva", se atualiza em tempo real conforme remove/adiciona elementos no DOM.
 const containerChilds = container.children;
 const botaoInserirAntes = document.getElementById("inserirAntes");
 const botaoSubstituir = document.getElementById("substituir");
@@ -16,7 +17,7 @@ botaoAdicionar.addEventListener("click", function () {
   novoParagrafo.textContent = "Novo parágrafo criado dinamicamente!";
   container.appendChild(novoParagrafo);
 });
-// Implemente um botão que remova o último elemento filho de um containerao ser clicado.
+// Implemente um botão que remova todos elementos filhos de um container ao ser clicado.
 botaoRemover.addEventListener("click", function () {
   if (containerChilds) {
     for (let i = containerChilds.length - 1; i >= 0; i--) {
