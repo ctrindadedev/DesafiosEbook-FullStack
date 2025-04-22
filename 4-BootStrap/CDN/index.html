@@ -2,35 +2,61 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, init
-ial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto com Bootstrap</title>
     <link
       rel="stylesheet"
-      href="<https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css>"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
   </head>
   <body>
+    <div class="container">
+      <p>Conteúdo centralizado e com padding horizontal.</p>
+    </div>
+    <div class="container-fluid">
+      <p>Conteúdo que ocupa 100% da largura do viewport.</p>
+    </div>
     <div class="container">
       <header class="my-4">
         <h1 class="text-center">Bem-vindo ao Meu Projeto</h1>
       </header>
       <main>
         <p class="lead">Esta é uma página de exemplo usando Bootstrap.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              Coluna Responsiva
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              Coluna Responsiva
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              Coluna Responsiva
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              Coluna Responsiva
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              Coluna Principal
+              <div class="row">
+                <div class="col-6">Subcoluna 1</div>
+                <div class="col-6">Subcoluna 2</div>
+              </div>
+            </div>
+            <div class="col-md-4">Coluna Secundária</div>
+          </div>
+        </div>
         <button class="btn btn-primary">Clique Aqui</button>
       </main>
       <footer class="mt-4 text-center">
         <p>&copy; 2023 Meu Projeto</p>
       </footer>
     </div>
-    <script src="<https://code.jquery.com/jquery-3.5.1.sli
-m.min.js>"></script>
-    <script src="<https://cdn.jsdelivr.net/npm/@popperjs/co
-re@2.9.2/dist/umd/popper.min.js>"></script>
-    <script src="<https://maxcdn.bootstrapcdn.com/bootstra
-p/4.5.2/js/bootstrap.min.js>"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
