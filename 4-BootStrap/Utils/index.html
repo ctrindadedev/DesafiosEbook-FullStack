@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste Bootstrap</title>
+    <link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css" />
+    <style>
+      .box {
+        height: 200px;
+        border: 2px dashed #ccc;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Margens -->
+    <div class="m-0">Margem 0</div>
+    <div class="mt-1">Margem superior 1</div>
+    <div class="mr-2">Margem direita 2</div>
+    <div class="mb-3">Margem inferior 3</div>
+    <div class="ml-4">Margem esquerda 4</div>
+    <div class="mx-5">Margens horizontais 5</div>
+    <div class="my-2">Margens verticais 2</div>
+    <div class="me-5">Margem ao fim</div>
+    <!-- Paddings -->
+    <div class="p-0">Padding 0</div>
+    <div class="pt-1">Padding superior 1</div>
+    <div class="pr-2">Padding direito 2</div>
+    <div class="pb-3">Padding inferior 3</div>
+    <div class="pl-4">Padding esquerdo 4</div>
+    <div class="px-5">Paddings horizontais 5</div>
+    <div class="py-2">Paddings verticais 2</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3">
+          <div class="p-3 mb-2 bg-light text-dark">
+            Box com padding e margem
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alinhamento de Texto -->
+    <p class="text-left">Texto alinhado à esquerda</p>
+    <p class="text-center">Texto centralizado</p>
+    <p class="text-right">Texto alinhado à direita</p>
+    <p class="text-justify">Texto justificado</p>
+    <p class="text-nowrap">Texto sem quebra de linha</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">Este texto está centralizado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alinhamento Horizontal -->
+    <div class="d-flex justify-content-start">Alinhado à esquerda</div>
+    <div class="d-flex justify-content-center">Alinhado ao centro</div>
+    <div class="d-flex justify-content-end">Alinhado à direita</div>
+    <div class="d-flex justify-content-between">Espaçado entre os itens</div>
+    <div class="d-flex justify-content-around">Espaçado ao redor dos itens</div>
+
+    <!-- Alinhamento Vertical -->
+
+    <!-- align-items-start -->
+    <div class="d-flex align-items-start box">
+      <div class="bg-primary text-white p-3 me-2">Item 1 ao topo</div>
+      <div class="bg-success text-white p-5">Item 2 ao topo</div>
+    </div>
+
+    <!-- align-items-center -->
+    <div class="d-flex align-items-center box">
+      <div class="bg-primary text-white p-3 me-2">item 1 centralizado</div>
+      <div class="bg-success text-white p-5">Item 2 centralizado</div>
+    </div>
+
+    <!-- align-items-end -->
+    <div class="d-flex align-items-end box">
+      <div class="bg-primary text-white p-3 me-2">Item 1 ao fundo</div>
+      <div class="bg-success text-white p-5">Item 2 ao fundo</div>
+    </div>
+
+    <!-- align-items-baseline -->
+    <div class="d-flex align-items-baseline box">
+      <div class="bg-primary text-white p-2 me-2" style="font-size: 14px">
+        Item A
+      </div>
+      <div class="bg-success text-white p-2" style="font-size: 30px">
+        Item B
+      </div>
+    </div>
+
+    <!-- align-items-stretch -->
+    <div class="d-flex align-items-stretch box">
+      <div class="bg-primary text-white p-3 me-2">Item 1 default</div>
+      <div class="bg-success text-white p-3">Item 2 default</div>
+    </div>
+
+    <div class="container">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh"
+      >
+        <div class="p-3 mb-2 bg-light text-dark">
+          Centralizado Horizontal e Verticalmente
+        </div>
+      </div>
+    </div>
+
+    <!-- Visibilidade -->
+    <div class="d-none">Sempre escondido</div>
+    <div class="d-block">Sempre visível</div>
+    <div class="d-sm-none">Escondido em telas pequenas</div>
+    <div class="d-md-block d-lg-none">Visível apenas em telas médias</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-none d-md-block">
+          Este conteúdo é visível apenas em telas médias e maiores.
+        </div>
+      </div>
+    </div>
+    <!-- Cores de Fundo -->
+    <div class="bg-primary text-white">Fundo Primário</div>
+    <div class="bg-secondary text-white">Fundo Secundário</div>
+    <div class="bg-success text-white">Fundo de Sucesso</div>
+    <div class="bg-danger text-white">Fundo de Perigo</div>
+    <div class="bg-warning text-dark">Fundo de Aviso</div>
+    <div class="bg-info text-white">Fundo de Informação</div>
+    <div class="bg-light text-dark">Fundo Claro</div>
+    <div class="bg-dark text-white">Fundo Escuro</div>
+    <!-- Cores de Texto -->
+    <p class="text-primary">Texto Primário</p>
+    <p class="text-secondary">Texto Secundário</p>
+    <p class="text-success">Texto de Sucesso</p>
+    <p class="text-danger">Texto de Perigo</p>
+    <p class="text-warning">Texto de Aviso</p>
+    <p class="text-info">Texto de Informação</p>
+    <p class="text-light bg-dark">Texto Claro</p>
+    <p class="text-dark">Texto Escuro</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 bg-primary text-white p-3">
+          Este é um texto com fundo primário e texto branco.
+        </div>
+      </div>
+    </div>
+    <script src="../../../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
