@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste Bootstrap</title>
+    <link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container fixo -->
+      <p>Conteúdo centralizado e com padding horizontal.</p>
+      <!-- As linhas ( row ) são usadas para criar grupos horizontais de colunas. 
+ Dentro das  linhas, as colunas ( col ) definem a estrutura do layout. -->
+      <div class="row">
+        <div class="col-md-8">
+          Coluna Principal
+          <div class="row">
+            <div class="col-6">Subcoluna 1</div>
+            <div class="col-6">Subcoluna 2</div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          Coluna Secundária
+          <div class="row">
+            <div class="col-6">Subcoluna Secundária 1</div>
+            <div class="col-6">Subcoluna Secundária 2</div>
+          </div>
+        </div>
+        <!-- define diferentes tamanhos de colunas para diferentes tamanhos de tela usando classes específicas -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Coluna Responsiva</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Coluna Responsiva</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Coluna Responsiva</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Coluna Responsiva</div>
+      </div>
+    </div>
+    <!-- O Bootstrap oferece classes para controlar o offset (deslocamento), a ordem
+    e o alinhamento das colunas. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">Coluna Centralizada com Offset</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 order-md-2">Coluna 1 (Ordem 2)</div>
+        <div class="col-md-4 order-md-1">Coluna 2 (Ordem 1)</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">Alinhado ao Centro</div>
+        <div class="col-md-4">Alinhado ao Centro</div>
+      </div>
+    </div>
+
+    <!-- Container fluido -->
+    <div class="container-fluid">
+      <p>Conteúdo que ocupa 100% da largura do viewport.</p>
+    </div>
+    <script src="../../../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
