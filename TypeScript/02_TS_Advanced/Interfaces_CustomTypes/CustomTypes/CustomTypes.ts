@@ -13,7 +13,7 @@ function atualizarStatus(status: StatusPedido): void {
   console.log(`Status atualizado para: ${status}`);
 }
 atualizarStatus("enviado"); // Válido
-atualizarStatus("cancelado"); // Erro: Tipo '"cancelado"' não é atribuível ao tipo 'StatusPedido'.
+// atualizarStatus("cancelado"); Tipo '"cancelado"' não é atribuível ao tipo 'StatusPedido'.
 
 //Tipos podem ser extendidos com outros tipos usando a interseção ( & ).
 //Interseção ( & ):
