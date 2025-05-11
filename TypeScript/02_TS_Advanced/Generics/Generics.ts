@@ -11,9 +11,9 @@ console.log(identico<number>(10)); // Saída: 10
 function pegarPrimeiroElemento<T>(arr: T[]): T {
   return arr[0];
 }
-const numeros = [1, 2, 3];
+const numeross = [1, 2, 3];
 const palavras = ["a", "b", "c"];
-console.log(pegarPrimeiroElemento(numeros)); // Saída: 1
+console.log(pegarPrimeiroElemento(numeross)); // Saída: 1
 console.log(pegarPrimeiroElemento(palavras)); // Saída: "a"
 
 //Restições com Generics
@@ -22,8 +22,8 @@ console.log(pegarPrimeiroElemento(palavras)); // Saída: "a"
 function obterPropriedade<T, K extends keyof T>(objeto: T, chave: K) {
   return objeto[chave];
 }
-const pessoa = { nome: "Carlos", idade: 30 };
-console.log(obterPropriedade(pessoa, "nome")); // Saída: "Carlos"
+const pessoaa = { nome: "Carlos", idade: 30 };
+console.log(obterPropriedade(pessoaa, "nome")); // Saída: "Carlos"
 //console.log(obterPropriedade(pessoa, "altura"));  Erro por essa key não ser válida
 
 //Restrição com types

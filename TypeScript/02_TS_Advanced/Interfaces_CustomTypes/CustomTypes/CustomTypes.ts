@@ -1,9 +1,9 @@
 //  "|"  é usado para indicar uma união de tipos => ter um dos tipos especificados, separados pela barra vertical.
-type ID = string | number;
-let usuarioId: ID;
+// type ID = string | number;
+// let usuarioId: ID;
 
-usuarioId = 123; // Válido
-usuarioId = "abc123"; // Válido
+// usuarioId = 123; // Válido
+// usuarioId = "abc123"; // Válido
 
 // Combinando Tipos ( Union Types ):
 //Tipos customizados são úteis para definir tipos que podem ser uma combinação de outros

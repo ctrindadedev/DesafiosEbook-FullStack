@@ -6,6 +6,7 @@
 // - Interfaces podem ser implementadas por classes, enquanto tipos não.
 // - Interfaces são preferíveis para definir estruturas de objetos, enquanto tipos são mais versáteis para combinações de tipos e literais.
 
+// Usuario é uma interface que define que todo objeto desse tipo deve ter nome e idade como obrigatórios e email como opcional.
 interface Usuario {
   nome: string;
   idade: number;
@@ -15,11 +16,10 @@ const usuario1: Usuario = {
   nome: "Ana",
   idade: 28,
 };
-// Usuario é uma interface que define que todo objeto desse tipo deve ter nome e idade como obrigatórios e email como opcional.
 
 //Implementando Interfaces em Classes:
 
-class Pessoa implements Usuario {
+class Pessoa2 implements Usuario {
   nome: string;
   idade: number;
   constructor(nome: string, idade: number) {
@@ -30,8 +30,8 @@ class Pessoa implements Usuario {
     return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`;
   }
 }
-const pessoa1 = new Pessoa("Carlos", 35);
-console.log(pessoa1.saudar()); // Saída: "Olá, meu nome é Carlos e tenho 35 anos."
+const pessoa3 = new Pessoa2("Carlos", 35);
+console.log(pessoa3.saudar()); // Saída: "Olá, meu nome é Carlos e tenho 35 anos."
 
 //Extendendo Interfaces
 interface Endereco {
